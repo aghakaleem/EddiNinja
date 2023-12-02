@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Text } from 'react-native';
+import GameScreen from "./src/components/GameScreen";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// Import necessary components or screens
+// For example:
+// import GameScreen from './GameScreen';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+    // You can define navigation or main structure here
+    return (
+        <View>
+            {/* You can render your main screen/component here */}
+            { <GameScreen /> }
+        </View>
+    );
+};
+
+export default App;
